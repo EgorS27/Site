@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+  <html>
+
+    <head>
+
+      <title>Главная страница</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+
+    <body>
+
+        <div class="navbar-fixed">
+        <nav>        
+        <div class="nav-wrapper">
+        <div class="container">
+          <a href ="#" class="brand-logo"><img src="test.png" height="72" width="120" alt="" vspace="3" align="top"></a>
+          <a href ="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+          <ul class="sidenav" id="slide-out">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </div>
+        </div>
+        </nav>
+        </div>
+
+        <div class="container">
+          <div class="carousel carousel-slider">
+            <a href="#one!" class="carousel-item"><img src="img1.jpg" alt=""></a>
+            <a href="#two!" class="carousel-item"><img src="img2.jpg" alt=""></a>
+            <a href="#three!" class="carousel-item"><img src="img3.jpg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row"></div>
+          <div class="row">
+          <div class="col xl3 l4 m6 s12 center-align">
+            <img src="galochka.jpg" alt="" height="61" width="98">
+            <h4>> 4500 обращений</h4>
+            <p>TEST TEST TEST TEST</p>
+          </div>
+          <div class="col xl3 l4 m6 s12 center-align">
+            <img src="galochka.jpg" alt="" height="61" width="98">
+            <h4>Круглосуточная поддержка</h4>
+            <p>TEST TEST TEST TEST</p>
+          </div>
+          <div class="col xl3 l4 m6 s12 center-align">
+            <img src="galochka.jpg" alt="" height="61" width="98">
+            <h4>> 50 000 довольных клиентов</h4>
+            <p>TEST TEST TEST TEST</p>
+          </div>
+          <div class="col xl3 l4 m6 s12 center-align">
+            <img src="galochka.jpg" alt="" height="61" width="98">
+            <h4>Лучшие специалисты</h4>
+            <p>TEST TEST TEST TEST</p>
+          </div>                        
+          </div>
+        </div>
+
+      <div class="container">
+        <div class="row center-align">
+          <form class="col s12">
+            <div class="row">
+            <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Имя пользователя</label>
+            </div>
+            <div class="row center-align">
+            <form class="col s6">
+            <div class="row">
+            <div class="input-field col s6">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" class="validate">
+            <label for="email">Электронная почта пользователя</label>
+            <span class="helper-text" data-error="Введите почту в формате - test@test.ru" data-success="right"></span>
+            </div>
+            </div>
+            </form>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row center-align">
+          <form class="col s12">
+            <div class="row">
+            <div class="input-field col s6">
+            <i class="material-icons prefix">title</i>
+            <input id="input_text" type="text" data-length="20">
+            <label for="input_text">Предмет обращения</label>
+            </div>
+            </div>
+            <div class="row center-align">
+            <div class="input-field col s12">
+            <i class="material-icons prefix">message</i>
+            <textarea id="textarea2" class="materialize-textarea" data-length="100"></textarea>
+            <label for="textarea2">Описание проблемы</label>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+        
+
+        
+        
+      
+
+      <!-- Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('.sidenav').sidenav();
+          $('.carousel.carousel-slider').carousel({
+          fullWidth:false, indicators:true})
+          $('input#input_text, textarea#textarea2').characterCounter();
+        });
+      </script>
+
+    </body>
+
+  </html>
